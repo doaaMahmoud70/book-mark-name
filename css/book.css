@@ -1,0 +1,80 @@
+body{
+    background-color: #f7ecde;
+}
+body::selection{
+    background-color: #fec260;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #352e28;
+    position: relative;
+    z-index: 2;
+  }
+  h1::after{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    background-color: #fec260;
+    width: 20%;
+    height: 20px;
+    z-index: -1;
+    transition: all 0.3s ease;
+
+
+  }
+  h1:hover::after{
+    top: 10px;
+    left: 40%;
+    background-color: #fec260;
+    height: 40px;
+  
+  }
+  h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+
+  
+      }
+      
+ h2{
+         background: linear-gradient(to right, #3ca55c, #b5ac49); 
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  */
+        align-items: center; 
+        justify-content: center;
+        gap: 10px;
+}
+.line{
+    border: dashed 1px ;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+h2::selection{
+    color: black;
+}
+input:focus{
+    box-shadow: 0 0 5px #df9215d8 !important;
+    border: #df9215d8  ;
+
+  }
+  button.btn1,
+  button.btn1:hover{
+background-color: #d1512d;
+color: white;
+  }
+
+  button.btn2,
+button.btn2:hover{
+  background-color: #9eb23b;
+  color: white;
+}
+   
+
+
+  
+   
